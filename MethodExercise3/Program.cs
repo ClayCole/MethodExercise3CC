@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace MethodExercise3
 {
@@ -17,12 +18,31 @@ namespace MethodExercise3
             // PrintRange(1000, -1000);   // this is how you call the method by using the varible name.
 
             //PrintThree();
+            Thread.Sleep(1500);
+            Console.WriteLine("Okay let's see if your number is eqaul to my quess");
             IsEqual(num, 5);
-            Console.WriteLine(Vote(age));
-            Console.WriteLine(Range(num));
-            Console.WriteLine();
             Console.WriteLine();
 
+            Thread.Sleep(1500);
+            Console.WriteLine("Now that I know your age, lets see if you can vote:");
+            Thread.Sleep(1500);
+            Console.WriteLine(Vote(age));
+            Console.WriteLine();
+
+            Thread.Sleep(1500);
+            Console.WriteLine("Some more exercise requiresments will be listed below, " +
+                "So just prepare for randomness.FYI I am using your input from earlier for these");
+
+            Thread.Sleep(1500);
+            Console.WriteLine("Seeiing if your input fits in my range:");
+            Console.WriteLine(Range(num));
+            Console.WriteLine();
+
+            Thread.Sleep(1500);
+            Console.WriteLine("Now lets use your input for some Multiplication, Are you ready:");
+            Console.ReadLine();
+
+            Console.WriteLine("Well here you go:");
             Mtable(num);
 
         }
